@@ -109,12 +109,12 @@ st.write('预估养老金(总)：', round(pension_total,2), '元,','相当于现
 st.write('预估基础养老金：', round(basic_pension,2), '元,','相当于现在的',round(basic_pension/inflation,2), '元')
 st.write('预估个人养老金：', round(personal_pension,2), '元,','相当于现在的',round(personal_pension/inflation,2), '元')
 st.write('预估增发养老金：', round(additional_pension,2), '元,','相当于现在的',round(additional_pension/inflation,2), '元')
-# bar1, bar2 = st.columns(2)
-# with bar1:
-#     st.bar_chart(pension_pd.iloc[:,0])
-# with bar2:
-#     st.bar_chart(pension_pd.iloc[:, 1])
-# st.markdown('-------')
+bar1, bar2 = st.columns(2)
+with bar1:
+    st.bar_chart(pension_pd.iloc[:,0])
+with bar2:
+    st.bar_chart(pension_pd.iloc[:, 1])
+st.markdown('-------')
 st.markdown('##### 为您推荐养老产品——财通资管鑫管家B')
 st.image('财通资管鑫管家B.png')
 
